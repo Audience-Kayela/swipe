@@ -22,7 +22,7 @@
   --p-size: 18px;
   --p-line-height: 26px;
 
-  /* Secondary text */
+  /* Secondary text styles*/
   --secondary-text-size: 14px;
   --secondary-text-line-height: 18px;
 
@@ -37,8 +37,14 @@
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
   --primary-accent: #0a2540;
+
+  /* Background styles */
   --bg-white: #fff;
   --bg-light: #f7f9fc;
+
+  /* Button styles */
+  --primary-button-hover: #6d7a88;
+  --button-size: 16px;
 }
 
 body {
@@ -107,7 +113,7 @@ a {
   text-decoration: none;
   color: var(--purple-1);
   font-weight: 500;
-  transition: color 0.25 ease;
+  transition: color 0.25s ease;
 }
 
 a:hover {
@@ -139,4 +145,52 @@ p {
   line-height: var(--secondary-text-line-height);
   color: var(--text-grey);
   letter-spacing: 0.25px;
+}
+
+.primary-button {
+  font-family: var(--body-font);
+  font-size: var(--button-size);
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--primary-accent);
+  color: var(--text-light);
+  padding: var(--spacing-sm) var(--spacing-md);
+  transition: all 0.15s ease;
+}
+
+.primary-button:hover {
+  background-color: var(--primary-button-hover);
+  cursor: pointer;
+}
+
+.secondary-button {
+  font-family: var(--body-font);
+  font-size: var(--button-size);
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: trasparent;
+  color: var(--primary-accent);
+  transition: all 0.15s ease;
+}
+
+.secondary-button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.with-icon {
+  display: flex;
+  justfy-content: center;
+  align-items: center;
+}
+.with-icon:hover > img {
+  transition: transform 0.25s ease;
+}
+
+.with-icon:hover > img {
+  transform: translateX(4px);
 }
