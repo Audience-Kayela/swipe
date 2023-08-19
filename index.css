@@ -433,11 +433,30 @@ align-items: flex-end;
 
 .integrations-section .card-container{ 
   display: flex;
-  margin: var(--spacign-lg) 0;
+  margin: var(--spacing-lg) 0;
 }
 
 .integrations-section .card-container .card{
   width: 50%;
+}
+
+/* Why swipe styles */
+
+.why-swipe-section .card-container{
+  display: flex;
+margin: var(--spacing-lg);
+}
+
+.why-swipe-section .card-container .card{
+  width: 25%;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-sm) 0 0;
+  box-sizing: border-box;
+
+}
+
+.why-swipe-section .card-container .card .secondary-text{
+  color: var(--text-dark);
 }
 
 
