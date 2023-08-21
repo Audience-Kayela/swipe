@@ -61,6 +61,10 @@
     #36c5f0 76.92%,
     #83e2ff 96.96%
   );
+
+
+
+
 }
 
 body {
@@ -281,6 +285,7 @@ justify-content: center;
   width: 100%;
   max-width: var(--standard-width);
   padding: 0 var(--spacing-md);
+  margin: 0 0 var(--spacing-xl) 0; 
 }
 
 .menu {
@@ -306,7 +311,23 @@ justify-content: center;
 main{
   margin: var(--spacing-xl) 0 0 0;
   width: 100%;
- 
+}
+
+/* Animated gradient */
+
+#gradient-canvas{
+  width: 200%;
+  height: 970px;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: -600px;
+  left: -50%;
+  z-index: -1;
+    /* Top Gradient */
+--gradient-color-1:#ef008f;
+--gradient-color-2:#6ec3f4;
+--gradient-color-3:#7038ff;
+--gradient-color-4:#ffba27;
 }
 
 /* Hero styles */
@@ -589,7 +610,7 @@ left: 0;
 content: "";
 background-color: var(--bg-white);
 width: 100%;
-height: 100%;
+height: 200%;
 position: absolute;
 top: 0;
 z-index: -1;
